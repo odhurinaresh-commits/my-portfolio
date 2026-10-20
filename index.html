@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <style>
+        .profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto 20px;
+}
+        
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+        /* 1. Basic page design */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0fdf4;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        /* 2. Navigation bar */
+        nav {
+            background-color: #ffffff;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px #0000000d;
+        }
+
+        nav h2 {
+            color: #15803d;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #334155;
+            margin-left: 18px;
+        }
+
+        nav a:hover {
+            color: #15803d;
+        }
+
+        /* 3. Main introduction */
+        .hero {
+            background: linear-gradient(135deg, #15803d, #7c3aed);
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 10px 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        .profile-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: white;
+            color: #15803d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 48px;
+            margin: 0 auto 20px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: white;
+            color: #15803d;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #dcfce7;
+        }
+
+        /* 4. Content sections */
+        section {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 30px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #15803d;
+            margin-bottom: 25px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 24px;
+            border-radius: 15px;
+            flex: 1 1 220px;
+            box-shadow: 0 4px 15px #0000000a;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #15803d;
+            margin-top: 0;
+        }
+
+        /* 5. Footer */
+        footer {
+            background-color: #14532d;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        /* 6. Responsive design for phones */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+                padding: 18px 12px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 50px 18px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            section {
+                margin: 18px auto;
+                padding: 20px;
+            }
+        }
+    
+/* Dark mode */
+body.dark-mode {
+    background-color: #111827;
+    color: #e5e7eb;
+}
+
+body.dark-mode nav,
+body.dark-mode .card {
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+body.dark-mode nav a {
+    color: #e5e7eb;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .card h3 {
+    color: #86efac;
+}
+
+body.dark-mode .card {
+    box-shadow: 0 4px 15px #00000030;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h2>My Portfolio</h2>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#learning">My Learning</a>
+            <button id="themeButton" type="button">
+    🌙 Dark Mode
+</button>
+        </div>
+    </nav>
+
+    
+<header class="hero">
+    <img src="images/profile.jpg"
+     alt="O.L.Naresh profile photo"
+     class="profile-photo">
+
+    <h1>Hello, I'm O.L.Naresh!</h1>
+
+    <p>B.Tech 1st Year Student</p>
+
+    <p>
+        Exploring Programming, Artificial Intelligence
+        and Technology.
+    </p>
+
+    <a href="#about" class="button">
+        Explore My Portfolio
+    </a>
+</header>
+
+
+    
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        Hello! I'm O.L.Naresh, a B.Tech 1st-year student
+        interested in programming, artificial intelligence,
+        and modern technology.
+    </p>
+
+    <p>
+        I enjoy exploring new ideas, learning programming
+        concepts, and developing my technical skills.
+    </p>
+
+    <p>
+        My goal is to build useful projects and continue
+        improving my knowledge of technology.
+    </p>
+</section>
+
+
+
+        <p>
+            Hello! Welcome to my personal website.
+            I enjoy learning new technologies, solving problems,
+            and building useful projects.
+        </p>
+    </section>
+
+    
+<section id="skills">
+    <h2 class="section-title">My Interests & Skills</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>💻 Programming</h3>
+            <p>
+                Learning Python, C programming,
+                and problem-solving.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Artificial Intelligence</h3>
+            <p>
+                Exploring AI tools, generative AI,
+                and intelligent applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🌐 Technology</h3>
+            <p>
+                Discovering web development
+                and new technologies.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    
+
+<section id="more">
+    <h2 class="section-title">More About Me</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>My Hobbies</h3>
+            <p>I like creating new useful things.</p>
+        </div>
+
+        <div class="card">
+            <h3>My Goals</h3>
+            <p>To become a proficient programmer and contribute to meaningful projects.</p>
+        </div>
+    </div>
+</section>
+
+<section id="learning">
+    <h2 class="section-title">My Learning Journey</h2>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Python</h3>
+            <p>
+                Learning programming fundamentals,
+                loops, functions, and problem-solving.
+            </p>
+            <p><strong>Status:</strong> Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>C Programming</h3>
+            <p>
+                Exploring variables, conditions,
+                operators, and data structures.
+            </p>
+            <p><strong>Status:</strong> Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>
+                Learning HTML, CSS, responsive
+                design, and JavaScript.
+            </p>
+            <p><strong>Status:</strong> Learning</p>
+        </div>
+
+        <div class="card">
+            <h3>Artificial Intelligence</h3>
+            <p>
+                Exploring AI tools, generative AI,
+                and how AI applications work.
+            </p>
+            <p><strong>Status:</strong> Exploring</p>
+        </div>
+
+    </div>
+</section>
+
+    <footer>
+        <p>Made with ❤️ by O.L.Naresh</p>
+    </footer>
+
+<script>
+    const themeButton = document.getElementById("themeButton");
+
+    themeButton.addEventListener("click", function () {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            themeButton.textContent = "☀️ Light Mode";
+        } else {
+            themeButton.textContent = "🌙 Dark Mode";
+        }
+    });
+</script>
+
+</body>
+</html>
