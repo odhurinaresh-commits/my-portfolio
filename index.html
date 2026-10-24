@@ -18,12 +18,15 @@
 }
         
 .profile-photo {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 4px solid #2e8b57;
+    border: 4px solid white;
+    display: block;
+    margin: 0 auto 20px;
 }
+
         /* 1. Basic page design */
         * {
             box-sizing: border-box;
@@ -97,7 +100,15 @@
     margin: 0 auto 20px;
     border: 4px solid #dcfce7;
 }
-
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #2e8b57;
+    display: block;
+    margin: 0 auto;
+}
         .button {
             display: inline-block;
             background-color: white;
@@ -276,7 +287,9 @@ nav a {
 
     
 <header class="hero">
-    <img src="myphoto.jpg" alt="My profile photo" class="profile-photo">
+    <img src="images/myprofile.jpg"
+     alt="My Profile Photo"
+     class="profile-photo">
 
     <h1>Hello, I'm O.L.Naresh!</h1>
 
@@ -297,9 +310,13 @@ nav a {
 
 <section id="about">
     <h2 class="section-title">About Me</h2>
-
     <p>
-        Hello! I'm O.L.Naresh, a B.Tech 1st-year student
+        Hello! Welcome to my personal website.
+        I enjoy learning new technologies, solving problems,
+        and building useful projects.
+    </p>
+    <p>
+        I'm O.L.Naresh, a B.Tech 1st-year student
         interested in programming, artificial intelligence,
         and modern technology.
     </p>
@@ -314,15 +331,6 @@ nav a {
         improving my knowledge of technology.
     </p>
 </section>
-
-
-
-        <p>
-            Hello! Welcome to my personal website.
-            I enjoy learning new technologies, solving problems,
-            and building useful projects.
-        </p>
-    </section>
 
     
 <section id="skills">
